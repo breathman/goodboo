@@ -7,6 +7,7 @@
  */
 
 use Silex\Application;
+use Silex\Provider\DoctrineServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,6 +20,13 @@ $app->register(new TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
+$app->register(new DoctrineServiceProvider(), array(
+	'db.options' => array(
+		'driver'   => 'pdo_sqlite',
+		'path'     => __DIR__.'/app.db',
+	),
+));
+
 $app['debug'] = true;
 
 $app->get('/', function() use ($app) {
@@ -26,31 +34,34 @@ $app->get('/', function() use ($app) {
     ));
 });
 
-$app->post('/application', function(Request $request) {
+$app->post('/message', function(Request $request) use ($app) {
 
-	$application  = array(
-		$request->get('name'),
-		$request->get('email'),
-		$request->get('message')
+	$message = array(
+		'user_name' => $request->get('name'),
+		'user_email' => $request->get('email'),
+		'text_message' => $request->get('message'),
 	);
 
-	$filename = __DIR__.'/mss.csv';
-	$file = fopen($filename, 'a');
-	fputcsv($file, $application, ';');
-	fclose($file);
-	return new Response(json_encode($application));
-});
-
-$app->post('/telegram/message', function(Request $request) {
-
-	$application  = array($request->getContent());
-
-	$filename = __DIR__.'/mss.csv';
-	$file = fopen($filename, 'a');
-	fputcsv($file, $application, ';');
-	fclose($file);
+	$app['db']->insert('message', $message);
 
 	return new Response(200);
+});
+
+$app->post('/telegram/message', function(Request $request) use ($app) {
+
+	$application  = json_decode($request->getContent());
+
+
+
+	return new Response(json_encode($application));
+
+});
+
+$app->get('/telegram/messages', function() use($app) {
+
+	$messages = $app['db']->fetchAll('message');
+
+	return new Response(json_encode($messages));
 
 });
 
