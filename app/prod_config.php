@@ -9,7 +9,7 @@ return array(
 		'default' => [
 			'driver' => 'pdo_mysql',
 			'dbname' => 'u0346940_default',
-			'host'   => '31.31.196.138',
+			'host'   => 'localhost',
 			'user'   =>  'u0346940_default',
 			'password' => '9_t9Wagb',
 			'port' => 3306,

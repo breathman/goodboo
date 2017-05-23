@@ -12,7 +12,7 @@ use Silex\Provider\TwigServiceProvider;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$env = 'dev';
+$env = 'prod';
 $config = require_once __DIR__ .'/'.$env.'_config.php';
 
 $app = new Application();
