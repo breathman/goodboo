@@ -5,7 +5,10 @@
         "silex/silex": "2.0",
         "twig/twig": "^1.33",
         "doctrine/dbal": "~2.2",
-        "telegram-bot/api": "^2.2"
+        "telegram-bot/api": "^2.2",
+        "knplabs/console-service-provider": "^2.0",
+        "monolog/monolog": "^1.22",
+        "kurl/silex-doctrine-migrations-provider": "^0.2.1"
     },
     "authors": [
         {

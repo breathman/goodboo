@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+/** @var Silex\Application $app */
+$console = require_once __DIR__.'/app-cli.php';
+
+/** @var  $application */
+$console->run();
