@@ -12,6 +12,7 @@ use Silex\Provider\TwigServiceProvider;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+date_default_timezone_set('Europe/Moscow');
 $env = 'prod';
 $config = require_once __DIR__ .'/'.$env.'_config.php';
 

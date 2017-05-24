@@ -3,7 +3,7 @@
 return array(
 	'debug' => true,
 	'monolog' => array(
-		'level' => 'NOTICE',
+		'level' => 'INFO',
 	),
 	'dbs' => array(
 		'default' => [
