@@ -29,8 +29,6 @@ $app->post('/telegram/message', function(Request $request) use ($app) {
 
 	$application  = json_decode($request->getContent());
 
-
-
 	return new Response(json_encode($application));
 
 });
@@ -41,7 +39,9 @@ $app->get('/telegram/messages', function() use($app) {
 	$qm  = $app['db']->createQueryBuilder();
 
 	$messages = $qm ->select('*')
-					->from('message')->execute()->fetch();
+					->from('message')
+					->execute()
+					->fetchAll();
 
 	return new Response(json_encode($messages));
 
