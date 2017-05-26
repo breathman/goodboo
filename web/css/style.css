@@ -488,6 +488,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-work,
 #fh5co-counters,
 #fh5co-pricing,
+#fh5co-application,
 #fh5co-blog {
   padding: 3em 0 0;
 }
@@ -499,6 +500,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-work,
   #fh5co-counters,
   #fh5co-pricing,
+  #fh5co-application,
   #fh5co-blog {
     padding: 3em 0;
   }
@@ -899,6 +901,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#fh5co-application {
+  padding-bottom: 2em;
+}
+
+
+
 #fh5co-footer {
   background: #41444B;
   color: rgba(255, 255, 255, 0.6);
@@ -1015,6 +1023,69 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 #fh5co-footer #btn-submit {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: #3EC483 !important;
+}
+
+.application-form .form-group input[type="name"]::-webkit-input-placeholder,
+.application-form .form-group input[type="text"]::-webkit-input-placeholder,
+.application-form .form-group input[type="email"]::-webkit-input-placeholder,
+.application-form .form-group input[type="phone"]::-webkit-input-placeholder,
+.application-form .form-group select::-webkit-input-placeholder,
+.application-form .form-group textarea::-webkit-input-placeholder {
+  color: #41444b;
+}
+.application-form .form-group input[type="name"]:-moz-placeholder,
+.application-form .form-group input[type="text"]:-moz-placeholder,
+.application-form .form-group input[type="email"]:-moz-placeholder,
+.application-form .form-group input[type="phone"]:-moz-placeholder,
+.application-form .form-group select:-moz-placeholder,
+.application-form .form-group textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #41444b;
+}
+.application-form .form-group input[type="name"]::-moz-placeholder,
+.application-form .form-group input[type="text"]::-moz-placeholder,
+.application-form .form-group input[type="email"]::-moz-placeholder,
+.application-form .form-group input[type="phone"]::-moz-placeholder,
+.application-form .form-group select::-moz-placeholder,
+.application-form .form-group textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #41444b;
+}
+.application-form .form-group input[type="name"]:-ms-input-placeholder,
+.application-form .form-group input[type="text"]:-ms-input-placeholder,
+.application-form .form-group input[type="text"]:-ms-input-placeholder,
+.application-form .form-group input[type="phone"]:-ms-input-placeholder,
+.application-form .form-group select:-ms-input-placeholder,
+.application-form .form-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 255);
+}
+.contact-form .form-group input {
+  color: #41444b;
+  background: transparent;
+  border: none;
+  background: rgba(255, 255, 255, 255);
+  box-shadow: none;
+  font-size: 18px;
+}
+.contact-form .form-group textarea {
+  color: #41444b;
+  background: transparent;
+  border: none;
+  background: rgba(255, 255, 255, 255);
+  box-shadow: none;
+  font-size: 18px;
+}
+.contact-form .form-group select {
+  color: #999999;
+  background: transparent;
+  border: none;
+  background: rgba(255, 255, 255, 255);
+  box-shadow: none;
+  font-size: 18px;
+}
+#btn-submit {
   color: rgba(255, 255, 255, 0.9) !important;
   background: #3EC483 !important;
 }
