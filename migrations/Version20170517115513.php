@@ -17,11 +17,12 @@ class Version20170517115513 extends AbstractMigration
     public function up(Schema $schema)
     {
         $message = $schema->createTable('message');
-        $message->addColumn('id', Type::INTEGER, ['autoincrement' => true]);
-        $message->addColumn('text_message', Type::STRING, []);
-        $message->addColumn('user_name', Type::STRING, ['length' => 32]);
-        $message->addColumn('user_email', Type::STRING, ['length' => 32, 'notnull' => false]);
-        $message->addColumn('user_phone', Type::STRING, ['length' => 32, 'notnull' => false]);
+        $message->addColumn('id',           Type::INTEGER,  ['autoincrement' => true]);
+        $message->addColumn('text_message', Type::STRING,   ['notnull' => false]);
+        $message->addColumn('user_name',    Type::STRING,   ['length' => 32]);
+        $message->addColumn('user_email',   Type::STRING,   ['length' => 32, 'notnull' => false]);
+        $message->addColumn('user_phone',   Type::STRING,   ['length' => 32, 'notnull' => false]);
+        $message->addColumn('service',      Type::INTEGER,  ['notnull' => false]);
         $message->setPrimaryKey(['id']);
     }
 

@@ -25,6 +25,25 @@ $app->post('/message', function(Request $request) use ($app) {
 	return new Response(200);
 });
 
+$app->post('/application', function(Request $request) use ($app) {
+
+	$application = array(
+		'service' => $request->get('service'),
+		'user_name' => $request->get('name'),
+		'user_email' => $request->get('email'),
+		'user_phone' => $request->get('phone'),
+		'text_message' => $request->get('message'),
+	);
+
+	sleep(10);
+
+	$app['logger']->info(sprintf('Пришла заявка с сайта %s', var_export($application, true)));
+
+	$app['db']->insert('message', $application);
+
+	return new Response(200);
+});
+
 $app->post('/telegram/message', function(Request $request) use ($app) {
 
 	$application  = json_decode($request->getContent());

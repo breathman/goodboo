@@ -1,4 +1,4 @@
-#circularG{
+#circularG, #application-circularG{
     position:relative;
     width:37px;
     height:37px;
@@ -37,7 +37,7 @@
     -moz-animation-direction:normal;
 }
 
-#circularG_1{
+#circularG_1, #app-circularG_1{
     left:0;
     top:15px;
     animation-delay:0.328s;
@@ -47,7 +47,7 @@
     -moz-animation-delay:0.328s;
 }
 
-#circularG_2{
+#circularG_2, #app-circularG_2{
     left:4px;
     top:4px;
     animation-delay:0.434s;
@@ -57,7 +57,7 @@
     -moz-animation-delay:0.434s;
 }
 
-#circularG_3{
+#circularG_3, #app-circularG_3{
     top:0;
     left:15px;
     animation-delay:0.54s;
@@ -67,7 +67,7 @@
     -moz-animation-delay:0.54s;
 }
 
-#circularG_4{
+#circularG_4, #app-circularG_4{
     right:4px;
     top:4px;
     animation-delay:0.646s;
@@ -77,7 +77,7 @@
     -moz-animation-delay:0.646s;
 }
 
-#circularG_5{
+#circularG_5, #app-circularG_5{
     right:0;
     top:15px;
     animation-delay:0.752s;
@@ -87,7 +87,7 @@
     -moz-animation-delay:0.752s;
 }
 
-#circularG_6{
+#circularG_6, #app-circularG_6{
     right:4px;
     bottom:4px;
     animation-delay:0.868s;
@@ -97,7 +97,7 @@
     -moz-animation-delay:0.868s;
 }
 
-#circularG_7{
+#circularG_7, #app-circularG_7{
     left:15px;
     bottom:0;
     animation-delay:0.974s;
@@ -107,7 +107,7 @@
     -moz-animation-delay:0.974s;
 }
 
-#circularG_8{
+#circularG_8, #app-circularG_8{
     left:4px;
     bottom:4px;
     animation-delay:1.08s;

@@ -1055,7 +1055,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .application-form .form-group input[type="name"]:-ms-input-placeholder,
 .application-form .form-group input[type="text"]:-ms-input-placeholder,
-.application-form .form-group input[type="text"]:-ms-input-placeholder,
+.application-form .form-group input[type="email"]:-ms-input-placeholder,
 .application-form .form-group input[type="phone"]:-ms-input-placeholder,
 .application-form .form-group select:-ms-input-placeholder,
 .application-form .form-group textarea:-ms-input-placeholder {
@@ -1064,7 +1064,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form .form-group input {
   color: #41444b;
   background: transparent;
-  border: none;
+  border: 1px solid #c6c6c6;
   background: rgba(255, 255, 255, 255);
   box-shadow: none;
   font-size: 18px;
@@ -1072,7 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form .form-group textarea {
   color: #41444b;
   background: transparent;
-  border: none;
+  border: 1px solid #c6c6c6;
   background: rgba(255, 255, 255, 255);
   box-shadow: none;
   font-size: 18px;
@@ -1080,7 +1080,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form .form-group select {
   color: #999999;
   background: transparent;
-  border: none;
+  border: 1px solid #c6c6c6;
   background: rgba(255, 255, 255, 255);
   box-shadow: none;
   font-size: 18px;
