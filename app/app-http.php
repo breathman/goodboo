@@ -35,8 +35,6 @@ $app->post('/application', function(Request $request) use ($app) {
 		'text_message' => $request->get('message'),
 	);
 
-	sleep(10);
-
 	$app['logger']->info(sprintf('Пришла заявка с сайта %s', var_export($application, true)));
 
 	$app['db']->insert('message', $application);
