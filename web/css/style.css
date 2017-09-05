@@ -67,13 +67,11 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 1.5em;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
   margin: 0 0 30px 0;
 }
 
@@ -109,11 +107,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 #fh5co-header #navbar li a {
-  font-family: "Roboto Mono", monospace;
   color: rgba(0, 0, 0, 0.6);
   position: relative;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
 }
 @media screen and (max-width: 992px) {
   #fh5co-header #navbar li a {
@@ -459,8 +455,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 #fh5co-home .text-inner .call-to-action a.demo {
-  border: 2px solid #3EC483;
-  background: #3EC483;
+  border: 2px solid #fa0050;
+  background: #fa0050;
   text-decoration: none !important;
 }
 @media screen and (max-width: 768px) {
@@ -470,8 +466,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #fh5co-home .text-inner .call-to-action a.download {
-  border: 2px solid #00ADB5;
-  background: #00ADB5;
+  border: 2px solid #3EC483;
+  background: #3EC483;
   text-decoration: none !important;
 }
 @media screen and (max-width: 768px) {
@@ -855,9 +851,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   display: block;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Roboto Mono", monospace;
   width: 100%;
-  font-weight: 700;
   margin-bottom: .3em;
 }
 .fh5co-counters .fh5co-counter-label {
@@ -1190,9 +1184,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Roboto Mono", monospace;
   font-size: 16px;
-  font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -1214,21 +1206,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  background: #3EC483;
+  background: #fa0050;
   color: #fff;
-  border: 2px solid #3EC483;
+  border: 2px solid #fa0050;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #52ca90 !important;
-  border-color: #52ca90 !important;
+  background: #e40049 !important;
+  border-color: #e40049 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #3EC483;
-  border: 2px solid #3EC483;
+  color: #fa0050;
+  border: 2px solid #fa0050;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #3EC483;
+  background: #fa0050;
   color: #fff;
 }
 

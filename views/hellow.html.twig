@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="" />
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/web/images/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
 
@@ -59,7 +59,7 @@
                 <div class="navbar-header">
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <a class="navbar-brand" href="#">GOODBOO.RU</a>
+                    <a class="" href="#"><img src="/web/images/logo_middle.png" alt=""></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -83,10 +83,15 @@
             <div class="text-inner">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h1 class="animate-box"><span class="big">ВАШ</span> <br><span>персональный</span> <br><span class="medium">помощник</span><br><span>в покупке</span> <br> <span class="medium">автомобиля</span></h1>
+                        <h1 class="animate-box"><span class="big">ВАШ</span> <br> <span class="medium">персональный</span> <br><span class="medium">помощник</span><br><span class="medium">в покупке</span> <br> <span class="medium">автомобиля</span></h1>
                         <div class="call-to-action">
-                            <a href="#" class="demo animate-box">Оставить заявку</a>
-                            <a href="#" class="download animate-box">Задать вопрос</a>
+                            <div id="navbar">
+                                <ul class="nav">
+                                    <li><a href="#" data-nav-section="application" class="demo animate-box">Оставить заявку</a></li>
+                                    <br/>
+                                    <li><a href="#" data-nav-section="footer" class="download animate-box">Задать вопрос</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +192,7 @@
                         </div>
                         <div class="fh5co-post animate-box">
                             <h3>Дарим скидки</h3>
-                            <p>Предоставляем скидки на все услуги при повторном обращении, а также по рекомендации друга</p>
+                            <p>Предоставляем скидки на все услуги при повторном обращении</p>
                         </div>
                     </div>
 
@@ -224,45 +229,55 @@
                 <div class="col-md-4 text-center animate-box">
                     <div class="pricing__item">
                         <h3 class="pricing__title">Выездная диагностика</h3>
-                        <div class="pricing__price">2000<span class="pricing_currency">р.</span></div>
+                        <div class="pricing__price">3000<span class="pricing_currency">р.</span></div>
                         <p class="pricing__sentence">Осмотр до трёх автомобилей в пределах одного района Москвы</p>
                         <ul class="pricing__feature-list">
                             <li class="pricing__feature">Бесплатная консультация</li>
                             <li class="pricing__feature">Отчет на e-mail</li>
                             <li class="pricing__feature">Обоснование целесообразности покупки</li>
                         </ul>
-                        <p><a href="#" class="btn btn-primary btn-lg pricing__action">Заказать</a></p>
+                        <div id="navbar">
+                            <ul class="nav">
+                                <li><a href="#" data-nav-section="application" class="btn btn-primary btn-lg pricing__action">Заказать</a></li>
+                            </ul>
+                        </div>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center animate-box">
                     <div class="pricing__item">
-                        <h3 class="pricing__title">Эксперт на день (очень выгодно)</h3>
-                        <div class="pricing__price">6000<span class="pricing_currency">р.</span></div>
+                        <h3 class="pricing__title">Эксперт на день</h3>
+                        <div class="pricing__price">8000<span class="pricing_currency">р.</span></div>
                         <p class="pricing__sentence">Передвижение на автомобиле эксперта в пределах Москвы</p>
                         <ul class="pricing__feature-list">
                             <li class="pricing__feature">ГСМ за наш счёт</li>
                             <li class="pricing__feature">Бесплатная консультация</li>
                             <li class="pricing__feature">Отчет на e-mail</li>
                             <li class="pricing__feature">Обоснование целесообразности покупки</li>
-                            <li class="pricing__feature">Скидка на детейлинг нового авто</li>
                         </ul>
-                        <p><a href="#" class="btn btn-primary btn-lg pricing__action">Заказать</a></p>
+                        <div id="navbar">
+                            <ul class="nav">
+                                <li><a href="#" data-nav-section="application" class="btn btn-primary btn-lg pricing__action">Заказать</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 text-center animate-box">
                     <div class="pricing__item">
                         <h3 class="pricing__title">Подбор авто под ключ</h3>
-                        <div class="pricing__price">20000<span class="pricing_currency">р.*</span></div>
-                        <p class="pricing__sentence">Детейлинг в подарок</p>
+                        <div class="pricing__price">от 20000<span class="pricing_currency">р.</span></div>
+                        <p class="pricing__sentence">Очень просто</p>
                         <ul class="pricing__feature-list">
                             <li class="pricing__feature">Бесплатная консультация</li>
                             <li class="pricing__feature">Помощь в выборе марки, модели, комплектации</li>
                             <li class="pricing__feature">Полный отчет об авто в печатном виде</li>
                             <li class="pricing__feature">Отчет на e-mail</li>
-                            <li class="pricing__feature">Гарантия соблюдения сроков</li>
-                            <li class="pricing__feature">* - при стоимости авто до 1 млн. руб.</li>
                         </ul>
-                        <p><a href="#" class="btn btn-primary btn-lg pricing__action">Заказать</a></p>
+                        <div id="navbar">
+                            <ul class="nav">
+                                <li><a href="#" data-nav-section="application" class="btn btn-primary btn-lg pricing__action">Заказать</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -614,7 +629,7 @@
     </div>
 </section>
 
-<div id="fh5co-footer" role="contentinfo">
+<div id="fh5co-footer" role="contentinfo" data-section="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4 animate-box">
@@ -629,14 +644,14 @@
                 <ul class="contact-info">
                     <li><i class="icon-map"></i>г. Москва, Головинское шоссе д.5А, БЦ Водный</li>
                     <li><i class="icon-phone"></i>+ 7-(915)-481-24-42</li>
-                    <li><i class="icon-envelope"></i><a href="#">client@goodboo.ru</a></li>
+                    <li><i class="icon-envelope"></i><a href="mailto:client@goodboo.ru">client@goodboo.ru</a></li>
                     <li><i class="icon-globe"></i><a href="#">www.goodboo.ru</a></li>
                 </ul>
-                <h3 class="section-title">Мы онлайн</h3>
+{#                <h3 class="section-title">Мы онлайн</h3>
                 <ul class="social-media">
                     <li><a href="#" class="github"><i class="icon-instagram"></i></a></li>
                     <li><a href="#" class="github"><i class="icon-facebook"></i></a></li>
-                </ul>
+                </ul>#}
             </div>
             <div class="col-md-4 animate-box">
                 <h3 class="section-title">Задать вопрос</h3>
