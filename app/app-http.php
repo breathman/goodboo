@@ -6,8 +6,13 @@ use Symfony\Component\HttpFoundation\Response;
 $app = require_once __DIR__.'/app.php';
 
 $app->get('/', function() use ($app) {
-	return $app['twig']->render('hellow.html.twig', array(
+	return $app['twig']->render('index.html.twig', array(
 	));
+});
+
+$app->get('/privacy', function() use ($app) {
+    return $app['twig']->render('privacy.html.twig', array(
+    ));
 });
 
 $app->post('/message', function(Request $request) use ($app) {
@@ -62,6 +67,10 @@ $app->get('/telegram/messages', function() use($app) {
 
 	return new Response(json_encode($messages));
 
+});
+
+$app->get('/api/intm', function (Request $request) use($app) {
+    return new Response(json_encode(200));
 });
 
 return $app;
